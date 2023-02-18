@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "e3955b00-5ab8-439a-bda1-995ebaa28b8b",
+		"name": "Python_SaaS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13839375"
+	},
+	"item": [
+		{
+			"name": "LondonWeather",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"b2eb546c-b278-4873-a198-a23848b5d1b0\",\r\n    \"requester_name\": \"Maksym Kasianenko\",\r\n    \"location\": \"London\",\r\n    \"date\": \"2022-12-14\",\r\n    \"get_hours\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://44.203.51.251:8000/content/api/v1/integration/weather",
+					"protocol": "http",
+					"host": [
+						"44",
+						"203",
+						"51",
+						"251"
+					],
+					"port": "8000",
+					"path": [
+						"content",
+						"api",
+						"v1",
+						"integration",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KievWeather",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"b2eb546c-b278-4873-a198-a23848b5d1b0\",\r\n    \"requester_name\": \"Maksym Kasianenko Once Again\",\r\n    \"location\": \"Kiev\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://44.203.51.251:8000/content/api/v1/integration/weather",
+					"protocol": "http",
+					"host": [
+						"44",
+						"203",
+						"51",
+						"251"
+					],
+					"port": "8000",
+					"path": [
+						"content",
+						"api",
+						"v1",
+						"integration",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TorontoWeather",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"b2eb546c-b278-4873-a198-a23848b5d1b0\",\r\n    \"requester_name\": \"Maksym Kasianenko, of course\",\r\n    \"location\": \"Toronto\",\r\n    \"date\": \"2023-01-11\",\r\n    \"get_hours\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://44.203.51.251:8000/content/api/v1/integration/weather",
+					"protocol": "http",
+					"host": [
+						"44",
+						"203",
+						"51",
+						"251"
+					],
+					"port": "8000",
+					"path": [
+						"content",
+						"api",
+						"v1",
+						"integration",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
